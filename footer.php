@@ -61,28 +61,28 @@
 </md-content>
 
 </body>
-  <script src="/wp-content/themes/havaneros/bower_components/angular/angular.min.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/angular-animate/angular-animate.min.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/angular-aria/angular-aria.min.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/angular-messages/angular-messages.min.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/angular-material/angular-material.min.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/wow/dist/wow.min.js"></script>
-  <script src="/wp-content/themes/havaneros/assets/scripts/app.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/angular/angular.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/angular-messages/angular-messages.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/angular-material/angular-material.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/wow/dist/wow.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/assets/scripts/app.js"></script>
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/wp-content/themes/havaneros/assets/scripts/js/jquery.mixitup.min.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/slick-carousel/slick/slick.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/angular-slick/dist/slick.js"></script>
-  <script src="/wp-content/themes/havaneros/bower_components/angular-slick/dist/slick.min.js"></script>
-  <script src="/wp-content/themes/havaneros/assets/scripts/funciones.js"></script>
+  <script src="/wp-content/themes/Havaneros/assets/scripts/js/jquery.mixitup.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/slick-carousel/slick/slick.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/angular-slick/dist/slick.js"></script>
+  <script src="/wp-content/themes/Havaneros/bower_components/angular-slick/dist/slick.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/assets/scripts/funciones.js"></script>
 
   
-  <script src="/wp-content/themes/havaneros/assets/scripts/js/jquery-ui-1.10.4.custom.min.js"></script>
-  <script src="/wp-content/themes/havaneros/assets/scripts/js/bjqs-1.3.js"></script>
-  <script type="text/javascript" src="/wp-content/themes/havaneros/bower_components/angular-pickadate.js"></script>
-  <script type="text/javascript" src="/wp-content/themes/havaneros/bower_components/angular-pickadate.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/assets/scripts/js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="/wp-content/themes/Havaneros/assets/scripts/js/bjqs-1.3.js"></script>
+  <script type="text/javascript" src="/wp-content/themes/Havaneros/bower_components/angular-pickadate.js"></script>
+  <script type="text/javascript" src="/wp-content/themes/Havaneros/bower_components/angular-pickadate.min.js"></script>
 
   <script>
     $(document).ready(function($) {          

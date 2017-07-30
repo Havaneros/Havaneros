@@ -5,7 +5,7 @@ body *{outline: none}
 
 @font-face {
   font-family: "roboto";
-  src: url(/wp-content/themes/havaneros/assets/fonts/Roboto-Regular.ttf) format("truetype");
+  src: url(/wp-content/themes/Havaneros/assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
 
 input{outline: none;}
@@ -540,7 +540,7 @@ a:active .line.-bottom {
 
 /*/////////////////////////////////////////////////////////////newsletter*/
 #newsletter{
-  background-image:url('/wp-content/themes/havaneros/assets/images/newsletter.jpg');
+  background-image:url('/wp-content/themes/Havaneros/assets/images/newsletter.jpg');
   background-attachment: fixed;
   min-height: 300px;
 }

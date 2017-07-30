@@ -55,7 +55,7 @@ include('/titleRow.php');
                         $featured_image = get_the_post_thumbnail_url($post->ID, 'full');
                       }
                  ?>
-                   <div class="post width100 padding10"  id="post-<?php get_the_ID(); ?>" >
+                   <div class="wow bounceInRight post width100 padding10"  id="post-<?php get_the_ID(); ?>" >
                        <div class="postInfo height100 backgroundCover textJustify padding50 backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
                           <a href="<?php the_permalink(); ?>"><h2 class="title colorBlack"><?php the_title(); ?></h2></a>
                           

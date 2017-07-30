@@ -57,14 +57,14 @@ include('/titleRow.php');
 
 
 <md-content class="blog heightAuto backColorWhite" layout="column" layout-align="center center">
-  <div class="content" layout="row" layout-align="start center" layout-wrap>
+  <div class="content width90" layout="row" layout-align="start center" layout-wrap>
   	<?php 
 
      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
     
      $custom_args = array(
        'post_type' => 'post',
-       'posts_per_page' => 9,
+       'posts_per_page' => 4,
        'paged' => $paged
      );
    
@@ -87,7 +87,7 @@ include('/titleRow.php');
              <p class="autor fontSize16 colorPrimary">by <em><?php the_author(); ?></em></p>
             <?php //the_excerpt()?>
           </div>
-    </div><!-- /#post-<?php get_the_ID(); ?> -->
+    </div>
     <?php endwhile; ?>
     <!-- end of the loop -->
     <?php
@@ -102,9 +102,6 @@ include('/titleRow.php');
   <?php wp_reset_postdata(); ?>
   <?php endif; ?>
     
-    
-    
-
        
     <?php wp_reset_query(); ?>
 </md-content>
