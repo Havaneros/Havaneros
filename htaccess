@@ -1,0 +1,43 @@
+Options -Indexes
+
+<FilesMatch "(\.ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+   <IfModule expires_module.c>
+	  ExpiresActive On
+	  ExpiresDefault "access plus 1 year"
+   </IfModule>
+</FilesMatch> 
+
+FileETag MTime Size
+
+# Requires mod_deflate to be enabled.
+<ifModule mod_deflate.c>
+	<filesMatch "\.(css|xml|html|php)$">
+		SetOutputFilter DEFLATE
+	</filesMatch>
+</ifModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^(.*)\.html$ $1.php [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME}.php -f
+	RewriteRule ^(.*)$ $1.php [NC,L]
+</IfModule>
+
+## redirecting to HTTPS #
+RewriteCond %{HTTPS} off
+# First rewrite to HTTPS:
+# Don't put www. here. If it is already there it will be included, if not
+# the subsequent rule will catch it.
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Now, rewrite any request to the wrong domain to use www.
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<Files 403.shtml>
+	order allow,deny
+	allow from all
+</Files>
+
+deny from 93.114.44.253

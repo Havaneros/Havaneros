@@ -1,0 +1,124 @@
+/*pantallas medianas*/
+@media only screen and (max-width: 960px){
+  .hideMd{
+    display: none;
+  }
+  .showMd{
+    display: flex;
+  }
+
+  
+/*///////////////////////contenido*/
+.width30Md{
+  width: 30%;
+}
+.width33Md{
+  width: 33%;
+}
+.width50Md{
+  width: 50%;
+}
+.width60Md{
+  width: 60%;
+}
+.width70Md{
+  width: 70%;
+}
+.width80Md{
+  width: 80%;
+}
+.width90Md{
+  width: 90%;
+}
+.fullWidthMd{
+  width: 100%;
+}
+
+.height50Md{
+  height: 50px;
+}
+.height100Md{
+  height: 100px;
+}
+.height150Md{
+  height: 150px;
+}
+.height200Md{
+  height: 200px;
+}
+.height250Md{
+  height: 250px;
+}
+.height300Md{
+  height: 300px;
+}
+.height400Md{
+  height: 400px;
+}
+.height500Md{
+  height: 500px;
+}
+.fullHeightMd{
+  height: 100%;
+}
+.autoHeightMd{
+  height: auto;
+}
+.minHeight500Md{
+  min-height: 700px;
+}
+
+	
+
+/*///////////////////////////////////////////////////////////header*/
+
+#header .container{
+  position: static;
+  margin-top: 0px;
+  width: 100%!important;
+}
+#header .container .content div{
+  padding: 0 20px;
+}
+.headerHide{
+  top: 0px!important;
+}
+.headerAdjust{
+  margin-top: 0px!important;
+  max-width: 10000px!important;
+  width: 100%!important;
+} 
+
+/*//////////////////////////////////////////////////////footer*/
+#footer{
+  
+}
+#footer .footerTop{
+}
+#footer .footerTop .column{
+  width: 80%!important;
+  padding: 20px 0 0 0;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////newsletter*/
+#newsletter{
+}
+#newsletter form{
+  margin: 10px;
+}
+#newsletter form input{
+  width: 100%;
+  margin: 10px 0;
+}
+#newsletter form button{
+  width: 100%;
+  margin: 10px 0;
+}
+
+
+/*////////////////////////////////////////////////////////////////blog*/
+.blog .content{
+ padding-left: 0px;
+}

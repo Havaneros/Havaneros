@@ -1,0 +1,126 @@
+@media only screen and (max-width: 630px){
+  /*///////////////////////contenido*/
+
+
+.hideSm{
+  display: none;
+}
+.showSm{
+  display: flex;
+}
+
+.width30Sm{
+  width: 30%;
+}
+.width33Sm{
+  width: 33%;
+}
+.width50Sm{
+  width: 50%;
+}
+.width60Sm{
+  width: 60%;
+}
+.width70Sm{
+  width: 70%;
+}
+.width80Sm{
+  width: 80%;
+}
+.width90Sm{
+  width: 90%;
+}
+.fullWidthSm{
+  width: 100%;
+}
+
+.height50Sm{
+  height: 50px;
+}
+.height100Sm{
+  height: 100px;
+}
+.height150Sm{
+  height: 150px;
+}
+.height200Sm{
+  height: 200px;
+}
+.height250Sm{
+  height: 250px;
+}
+.height300Sm{
+  height: 300px;
+}
+.height400Sm{
+  height: 400px;
+}
+.height500Sm{
+  height: 500px;
+}
+.fullHeightSm{
+  height: 100%;
+}
+.autoHeightSm{
+  height: auto;
+}
+.minHeight500Sm{
+  min-height: 700px;
+}
+
+}
+
+/*solo celulares pequeños*/
+@media only screen and (orientation:portrait) and (max-device-width: 630px){
+
+
+  .smFontSize14{
+    font-size: 10px!important;
+  }
+  .smFontSize16{
+    font-size: 12px!important;
+  }
+  .smFontSize18{
+    font-size: 14px!important;
+  }
+  .fontSize20{
+    font-size: 15px!important;
+  }
+  .fontSize25{
+    font-size: 20px!important;
+  }
+  .fontSize30{
+    font-size: 20px!important;
+  }
+  .fontSize40{
+    font-size: 25px!important;
+  }
+  .fontSize45{
+    font-size: 25px!important;
+  }
+  .fontSize55{
+    font-size: 30px!important;
+  }
+  .fontSize60{
+    font-size: 30px!important;
+  }
+
+
+  .backCover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+  }
+  .backCoverSpecial{
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: auto 100%!important;
+  }
+
+
+
+}
+
+@media only screen and (max-height: 370px){
+	
+}
