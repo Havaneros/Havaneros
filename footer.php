@@ -3,20 +3,23 @@
 <md-content id="newsletter" class="backgroundCover backColorBase autoHeight" layout="column" layout-align="center center">
   <div class="content padding20" layout="column" layout-align="center center">
     <h1 class="textCenter colorWhite"><strong>Get news and information on upcoming events</strong></h1>
+
      <?php echo do_shortcode("[newsletter_form form='1']"); ?>
   </div>
 </md-content>
 
 <md-content id="footer" class="backColorBlack" layout="column" layout-align="center center">
-  <div class="footerTop content width90 height400 autoHeightMd colorWhite wow bounceInUp" layout="row" layout-align="center center" layout-wrap>
+  <div class="footerTop content width90 height350 autoHeightMd colorWhite wow bounceInUp" layout="row" layout-align="center center" layout-wrap>
     <div class="column width33 fullHeight " >
        <h1 class="colorPrimary"><strong>HAVANEROS</strong></h1>
        <br>
        <p class="textJustify">alorem ipsum dolor Cannabis Entertainment sit amet, consectetuer adipiscing elit.</p>
        <p>100 Havaneros Ave, Havaneros, CA 09088</p>
+       <br>
        <a href="#">
          <p class="text colorPrimary"><strong>Open Google Maps</strong></p>
        </a>
+       <br>
        <p>contact@Havaneros.com </p>
        <p>www.Havaneros.com</p>
     </div>
@@ -40,18 +43,22 @@
     </div>
     <div class="column width33 fullHeight">
        <h2><strong>FOLLOW US</strong></h2>
+       <br>
        <a href="#">
          <p class="text colorPrimary"><strong>@havaneros</strong></p>
        </a>
+       <br>
        <a href="#">
          <p class="text colorPrimary"><strong>@havaneros</strong></p>
        </a>
+       <br>
        <a href="#">
          <p class="text colorPrimary"><strong>havaneros</strong></p>
        </a>
+       <br>
     </div>
   </div>
-  <div class="borderBottom backColorPrimary fullWidth">
+  <div class="borderBottom backColorWhite fullWidth">
   </div>
 </md-content>
 <md-content id="footer" class="backColorBlack" layout="column" layout-align="center center">

@@ -68,7 +68,7 @@ function openHeaderMenu(){
 
 
 var scroll = $(window).scrollTop();
-if (scroll >= 50) {
+if (scroll >= 30) {
     $("#header").addClass("headerHide");
     $("#header .container").addClass("headerAdjust");
 } 
@@ -80,7 +80,7 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     
 
-    if (scroll >= 50) {
+    if (scroll >= 30) {
         $("#header").addClass("headerHide");
         $("#header .container").addClass("headerAdjust");
     } 
@@ -90,9 +90,9 @@ $(window).scroll(function() {
     }
 
 
-    var limit = $('#indexMain').outerHeight()/1.4;
+    var limit = $('#indexMain').outerHeight()/1.5;
     if(scroll <= limit){
-       var parallax = scroll/1.5;
+       var parallax = scroll/1.6;
        parallax += 'px';
        $(".sliderSlick").css('top',parallax);
     }
@@ -133,3 +133,10 @@ $(document).ready(function(){
     pauseOnHover: false
   });
 });
+
+
+
+/////////////////////////////////////load more button post
+
+
+

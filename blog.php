@@ -8,7 +8,7 @@ get_header();
 include('/titleRow.php'); 
 ?>
 
-<md-content class="blog height500 backColorWhite" layout="column" layout-align="center center">
+<!-- <md-content class="blog height500 backColorWhite" layout="column" layout-align="center center">
   <div class="content">
   	  <h2>Featured Posts</h3>
       <?php
@@ -53,58 +53,59 @@ include('/titleRow.php');
 
       ?>
   </div>
-</md-content>
+</md-content> -->
 
 
-<md-content class="blog heightAuto backColorWhite" layout="column" layout-align="center center">
+<md-content id="blogHolder" class="blog heightAuto backColorWhite" layout="column" layout-align="center center">
   <div class="content width90" layout="row" layout-align="start center" layout-wrap>
-  	<?php 
 
-     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-    
-     $custom_args = array(
-       'post_type' => 'post',
-       'posts_per_page' => 4,
-       'paged' => $paged
-     );
-   
-     $custom_query = new WP_Query( $custom_args ); ?>
-    
-    <?php if ( $custom_query->have_posts() ) : ?>
+  	<?php // Display blog posts on any page 
+    $wp_query = new WP_Query(array(
+                'post_type' => 'post',
+                'posts_per_page' => 3,
+                'paged' => $paged,
+                'order' => 'DES'
+            ));
+    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-    <!-- the loop -->
-    <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
-    <?php 
-         $featured_image = '';
-         if (has_post_thumbnail()) {
-           $featured_image = get_the_post_thumbnail_url($post->ID, 'full');
-         }
-    ?>
-    <div class="post width33 width50Md fullWidthSm padding10"  id="post-<?php get_the_ID(); ?>" >
-          <div class="postInfo height150 textJustify backgroundCover padding50 backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
-             <a href="<?php the_permalink(); ?>"><h2 class="title colorBlack"><?php the_title(); ?></h2></a>
-             
-             <p class="autor fontSize16 colorPrimary">by <em><?php the_author(); ?></em></p>
-            <?php //the_excerpt()?>
-          </div>
-    </div>
+         <?php 
+           $featured_image = '';
+           if (has_post_thumbnail()) {
+             $featured_image = get_the_post_thumbnail_url($post->ID, 'full');
+           }
+         ?>
+         <div class="wow bounceInRight post width33 width50Md fullWidthSm padding10"  id="post-<?php get_the_ID(); ?>" >
+           <a href="<?php the_permalink(); ?>">
+             <div class="postInfo height200 backgroundCover backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
+                           
+             </div>
+             <h2 class="title colorBlack"><?php the_title(); ?></h2>
+           </a>
+         </div>
+
     <?php endwhile; ?>
-    <!-- end of the loop -->
-    <?php
-    if (function_exists(custom_pagination)) {
-        custom_pagination($custom_query->max_num_pages,"",$paged);
-    }
+  </div>
+  <div class="paginationHolder content width90" layout="row" layout-align="center center" layout-wrap>
+    <?php 
+  
+    the_posts_pagination( array(
+      'mid_size'  => 5,
+      'prev_text' => __( 'NEW', 'textdomain' ),
+      'next_text' => __( 'OLDER', 'textdomain' ),
+    ) );
     ?>
   </div>
-       
-        
-  
-  <?php wp_reset_postdata(); ?>
-  <?php endif; ?>
+
+    <?php wp_reset_postdata(); ?>
+
     
+    
+  
        
-    <?php wp_reset_query(); ?>
+  
 </md-content>
+
+
 
 
 <?php get_footer(); //include('/footer.php'); ?>

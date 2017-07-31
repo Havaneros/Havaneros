@@ -15,11 +15,19 @@ include('/titleRow.php');
 ?>
 
 <md-content id="singlePost" class="backColorWhite" layout="column" layout-align="center center">
-	<div class="content padding20" layout="row" layout-align="center start">
+	<div class="content padding20 width90" layout="row" layout-align="center start">
  
-        <div class="width70 fullWidthMd info">
+    <div class="width70 fullWidthMd info">
+     <p>By <em class="colorPrimary"><?php the_author()?></em> | <?php the_date();?>  <?php the_time();?></p>
+     <br>
 		 <?php 
 		   the_content(); 
+     ?>
+     <br>
+     <br>
+     <br>
+     <h2 class="colorWhite"><a href="/blog/" >RETURN TO BLOG</a></h2>
+     <?php
            // If comments are open or we have at least one comment, load up the comment template.
 		   if ( comments_open() || get_comments_number() ) :
 		   	comments_template();
@@ -31,6 +39,7 @@ include('/titleRow.php');
 
 		// End the loop.
 		endwhile;
+
 		?>
 
 		<div class="width30 hideMd padding50 posts">
@@ -56,16 +65,19 @@ include('/titleRow.php');
                       }
                  ?>
                    <div class="wow bounceInRight post width100 padding10"  id="post-<?php get_the_ID(); ?>" >
-                       <div class="postInfo height100 backgroundCover textJustify padding50 backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
-                          <a href="<?php the_permalink(); ?>"><h2 class="title colorBlack"><?php the_title(); ?></h2></a>
-                          
-                          <p class="autor fontSize16 colorPrimary">by <em><?php the_author(); ?></em></p>
-                         <?php //the_excerpt()?>
+                      <a href="<?php the_permalink(); ?>">
+                       <div class="postInfo height150 backgroundCover backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
+                                     
                        </div>
+                       <h2 class="title colorBlack"><?php the_title(); ?></h2>
+                     </a>
                    </div>
                 
                  <?php endwhile;
+
+
                  wp_reset_postdata();
+
              endif; 
              wp_reset_query(); ?>
              

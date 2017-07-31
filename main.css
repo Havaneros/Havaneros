@@ -237,6 +237,7 @@ h2{
   width: 100%;
 }
 
+
 .height50{
   height: 50px;
 }
@@ -254,6 +255,9 @@ h2{
 }
 .height300{
   height: 300px;
+}
+.height350{
+  height: 350px;
 }
 .height400{
   height: 400px;
@@ -418,17 +422,17 @@ md-content .content, .container .content{
 }
 
 /*menu button animation*/
-a {
+.optionsHolder a {
   cursor: pointer;
   transform: translate3d(0, 0, 0);
   margin: 3px 0 0 20px;
 }
-a .text {
+.optionsHolder a .text {
   transform: translate3d(0, 0.1em, 0);
   margin: 5px;
   transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s;
 }
-a:after {
+.optionsHolder a:after {
   position: absolute;
   content: '';
   left: calc(0.1em * 1.2);
@@ -474,40 +478,40 @@ a:after {
   transform-origin: right;
 }
 
-a:hover .text,
-a:active .text {
+.optionsHolder a:hover .text,
+.optionsHolder a:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
 }
-a:hover:after,
-a:active:after {
+.optionsHolder a:hover:after,
+.optionsHolder a:active:after {
   transform: scale3d(0, 1, 1);
   right: -4px;
   left: -4px;
   transform-origin: right;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.8s, right 0.1s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.1s;
 }
-a:hover .line,
-a:active .line {
+.optionsHolder a:hover .line,
+.optionsHolder a:active .line {
   transform: scale3d(1, 1, 1);
 }
-a:hover .line.-right,
-a:active .line.-right {
+.optionsHolder a:hover .line.-right,
+.optionsHolder a:active .line.-right {
   transition: transform 0.05s cubic-bezier(1, 0, 0.65, 1.01) 0.1s;
   transform-origin: bottom;
 }
-a:hover .line.-top,
-a:active .line.-top {
+.optionsHolder a:hover .line.-top,
+.optionsHolder a:active .line.-top {
   transition: transform 0.04s linear 0.2s;
   transform-origin: right;
 }
-a:hover .line.-left,
-a:active .line.-left {
+.optionsHolder a:hover .line.-left,
+.optionsHolder a:active .line.-left {
   transition: transform 0.04s linear 0.24s;
   transform-origin: top;
 }
-a:hover .line.-bottom,
-a:active .line.-bottom {
+.optionsHolder a:hover .line.-bottom,
+.optionsHolder a:active .line.-bottom {
   transition: transform 0.2s cubic-bezier(0, 0.53, 0.29, 1) 0.27s;
   transform-origin: left;
 }
@@ -642,6 +646,32 @@ a:active .line.-bottom {
 .blog .content{
  padding: 50px 0 50px 15px;
 }
+.blog .paginationHolder .navigation .screen-reader-text{
+ display: none;
+}
+.blog .paginationHolder .navigation .nav-links .page-numbers{
+ font-size: 18px;
+ color: white!important;
+ margin: 0;
+ padding: 10px 20px;
+ background-color: #282828!important;
+}
+.blog .paginationHolder .navigation .nav-links .current{
+ background-color: #96ceb4!important;
+ -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.blog .paginationHolder .navigation .nav-links .page-numbers:hover{
+ -webkit-transition: all 0.5s;
+ -moz-transition: all 0.5s;
+ -o-transition: all 0.5s;
+ -ms-transition: all 0.5s;
+ transition: all 0.5s;
+ background-color: #96ceb4!important;
+}
   
   
 /*/////////////////////////////////////////////////////////////////single*/
@@ -656,8 +686,18 @@ a:active .line.-bottom {
   padding-right: 0px;
   padding-top: 0px;
 }
+#singlePost .posts a{
+  margin: 0px;
+}
+#singlePost .posts h2{
+  padding-top: 0px;
+}
 #singlePost .info p{
   text-align: justify;
+}
+#singlePost .info img{
+  width: 100%;
+  height: auto;
 }
 #singlePost .info #comments{
   padding: 50px 0;
@@ -697,3 +737,10 @@ a:active .line.-bottom {
 #singlePost .info #comments .comment-list .reply a{
   font-size: 14px!important;
 }
+
+
+
+
+
+
+
