@@ -48,9 +48,10 @@
 
 <body ng-app="habaneros" scroll ng-controller="mainCTL as main">
 
+
 <div id="header" class="container backColorWhite" layout="column" layout-align="center center">
     <div class="content relative width90" layout="row" layout-align="center center"> 
-      <div class="wow bounceInLeft logoHolder alignLeft">
+      <div class="logoHolder alignLeft">
          <a href="/index.php">
            <!-- <h1 class="colorPrimary">HAVANEROS</h1> -->
            <img src="/wp-content/themes/Havaneros/assets/images/logoTest2.png">
@@ -98,7 +99,7 @@
       </div>
   </div>
 </div>
-<md-content id="smallMenu" class=" fullWidth backColorPrimary colorWhite showMd" layout="column" layout-align="center center">
+<md-content id="smallMenu" class=" fullWidth backColorWhite colorWhite showMd" layout="column" layout-align="center center">
        <div class="content width90 ">
         <div class="textLeft optionsHolder">
              <a href="#"><p class="fontSize25">menu 1</p></a>

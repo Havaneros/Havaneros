@@ -111,13 +111,13 @@ p, h3, h4, h5, h6, a{
   font-family: "roboto";
 }
 h1{
-  font-size: 30px; /*tamaño estandar*/
+  font-size: 45px; /*tamaño estandar*/
   font-weight: bold;
 
   font-family: "roboto";
 }
 h2{
-  font-size: 20px; /*tamaño estandar*/
+  font-size: 25px; /*tamaño estandar*/
   font-weight: bold;
 
   font-family: "roboto";
@@ -367,13 +367,13 @@ md-content .content, .container .content{
   z-index: 9999;
   right: 0;
   position: fixed;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 #header .logoHolder img{
-  height: 50px;
-  width: auto;
+  height: 55px;
 }
 #header p, #header h1{
-  /*color:#caab85; */
+  /*color:white;*/
 }
 .headerAdjust p, .headerAdjust h1{
   /*color:#282828!important;*/
@@ -385,7 +385,12 @@ md-content .content, .container .content{
   -ms-transition: all 0.9s;
   transition: all 0.9s;
   top: 0px!important;
+  height: 45px!important;
+  background-color: white!important;
   /*box-shadow: 0px 1px 20px 0px #282828;*/
+}
+.headerAdjust img{
+  height: 35px!important;
 }
 #smallMenu{
   max-height: 0px;
@@ -414,7 +419,7 @@ md-content .content, .container .content{
 .optionsHolder a {
   cursor: pointer;
   transform: translate3d(0, 0, 0);
-  margin: 3px 0 0 20px;
+  margin: 0 0 0 20px;
 }
 .optionsHolder a .text {
   transform: translate3d(0, 0.1em, 0);
@@ -630,7 +635,10 @@ md-content .content, .container .content{
 
 
 /*/////////////////////////////////////////////////////////////////title row*/
-
+#titleRow{
+  background-image:url('/wp-content/themes/Havaneros/assets/images/banners/cuba5.jpg');
+  background-attachment: fixed;
+}
 #titleRow h1{
   padding-top: 80px;
   text-transform: uppercase;
@@ -640,6 +648,25 @@ md-content .content, .container .content{
 /*////////////////////////////////////////////////////////////////blog*/
 .blog .content{
  padding: 50px 0 50px 15px;
+}
+.blog .post .postInfo{
+  overflow: hidden;
+}
+.blog .post .postInfo div{
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.blog .post:hover .postInfo div{
+  transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')";
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand');
 }
 .blog .paginationHolder .navigation .screen-reader-text{
  display: none;

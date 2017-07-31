@@ -76,8 +76,9 @@ include('/titleRow.php');
          ?>
          <div class="wow bounceInRight post width33 width50Md fullWidthSm padding10"  id="post-<?php get_the_ID(); ?>" >
            <a href="<?php the_permalink(); ?>">
-             <div class="postInfo height200 backgroundCover backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
-                           
+             <div class="postInfo height200">
+                <div class="fullWidth fullHeight backgroundCover backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
+                </div>
              </div>
              <h2 class="title colorBlack"><?php the_title(); ?></h2>
            </a>
