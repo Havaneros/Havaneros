@@ -48,61 +48,45 @@
 
 <body ng-app="habaneros" scroll ng-controller="mainCTL as main">
 
-<md-content id="header" class="backColorBlack" layout="column" layout-align="start center">
-  <div class="content contactInfo width90 colorWhite hideMd" layout="row" >
-    <p class="fontSize16">Follow Us:</p>
-    <p class="fontSize16"><strong>T</strong></p>
-    <p class="fontSize16"><strong>F</strong></p>
-    <p class="fontSize16"><strong>I</strong></p>
-    <p class="fontSize16"><strong>t</strong></p>
-    <p class="fontSize16"></p>
-    <p class="fontSize16">Call Us: 998-0802-344</p>
-  </div>
-  <div class="container backColorWhite colorPrimary" layout="column" layout-align="center center">
-    <div class="content relative" layout="row" layout-align="center center"> 
+<div id="header" class="container backColorWhite" layout="column" layout-align="center center">
+    <div class="content relative width90" layout="row" layout-align="center center"> 
       <div class="logoHolder alignLeft">
          <a href="/index.php">
-           <h1>HAVANEROS</h1>
+           <!-- <h1 class="colorPrimary">HAVANEROS</h1> -->
+           <img src="/wp-content/themes/Havaneros/assets/images/logoTest2.png">
          </a>
       </div>
       <div class="alignRight optionsHolder hideMd" layout="row" layout-align="center center">
          <a href="#">
-           <p class="text colorPrimary fontSize14"><strong>ABOUT US</strong></p>
+           <p class="text colorBlack">ABOUT US</p>
            <span class="line -right"></span>
            <span class="line -top"></span>
            <span class="line -left"></span>
            <span class="line -bottom"></span>
          </a>
          <a href="#">
-           <p class="text colorPrimary fontSize14"><strong>GALLERY</strong></p>
+           <p class="text colorBlack">GALLERY</p>
            <span class="line -right"></span>
            <span class="line -top"></span>
            <span class="line -left"></span>
            <span class="line -bottom"></span>
          </a>
          <a href="#">
-           <p class="text colorPrimary fontSize14"><strong>PACKAGES</strong></p>
-           <span class="line -right"></span>
-           <span class="line -top"></span>
-           <span class="line -left"></span>
-           <span class="line -bottom"></span>
-         </a>
-         <a href="#">
-           <p class="text colorPrimary fontSize14"><strong>BOOKING</strong></p>
+           <p class="text colorBlack">PACKAGES</p>
            <span class="line -right"></span>
            <span class="line -top"></span>
            <span class="line -left"></span>
            <span class="line -bottom"></span>
          </a>
          <a href="/blog/">
-           <p class="text colorPrimary fontSize14"><strong>BLOG</strong></p>
+           <p class="text colorBlack">BLOG</p>
            <span class="line -right"></span>
            <span class="line -top"></span>
            <span class="line -left"></span>
            <span class="line -bottom"></span>
          </a>
          <a href="#">
-           <p class="text colorPrimary fontSize14"><strong>CONTACT US</strong></p>
+           <p class="text colorBlack">CONTACT US</p>
            <span class="line -right"></span>
            <span class="line -top"></span>
            <span class="line -left"></span>
@@ -112,9 +96,8 @@
       <div id="burger" class="alignRight showMd btn">
        <img src="/wp-content/themes/Havaneros/assets/images/svgs/lnr-menu-circle.svg"  class="svgColorSecondary svg40 svg">
       </div>
-    </div>
   </div>
-</md-content>
+</div>
 <md-content id="smallMenu" class=" fullWidth backColorPrimary colorWhite showMd" layout="column" layout-align="center center">
        <div class="content width90 ">
         <div class="textLeft optionsHolder">

@@ -9,6 +9,9 @@
   display: flex;
 }
 
+.width20Sm{
+  width: 20%;
+}
 .width30Sm{
   width: 30%;
 }

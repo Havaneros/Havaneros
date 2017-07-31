@@ -68,29 +68,34 @@ function openHeaderMenu(){
 
 
 var scroll = $(window).scrollTop();
-if (scroll >= 30) {
-    $("#header").addClass("headerHide");
-    $("#header .container").addClass("headerAdjust");
+if (scroll >= 100) {
+    $("#header").addClass("headerAdjust");
 } 
 else {
-    $("#header").removeClass("headerHide");
-    $("#header .container").removeClass("headerAdjust");
+    $("#header").removeClass("headerAdjust");
 }
+var headerActive = false;
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    
 
-    if (scroll >= 30) {
-        $("#header").addClass("headerHide");
-        $("#header .container").addClass("headerAdjust");
-    } 
-    else {
-        $("#header").removeClass("headerHide");
-        $("#header .container").removeClass("headerAdjust");
+
+    if(scroll <= 100 && headerActive == false && $('body').outerWidth() > 960){
+       var temp = -1*scroll;
+       temp += 'px';
+       $("#header").css('top',temp);
+    }
+    else if(scroll > 100 && headerActive == false && $('body').outerWidth() > 960){
+       headerActive = true;
+       $("#header").addClass("headerAdjust");
+    }
+    else if(scroll <= 1 && headerActive == true && $('body').outerWidth() > 960){
+       $("#header").css('top','0px');
+       headerActive = false;
+       $("#header").removeClass("headerAdjust");
     }
 
 
-    var limit = $('#indexMain').outerHeight()/1.5;
+    var limit = $('#indexMain').outerHeight()/1.2;
     if(scroll <= limit){
        var parallax = scroll/1.6;
        parallax += 'px';

@@ -30,15 +30,17 @@ get_header();
     <div class="banner backgroundCover" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba1.jpg);"></div>
     <div class="banner backgroundCover" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba3.jpg);"></div>
   </div>
-  <div class="alignCenter container fullHeight fullWidth" layout="column" layout-align="center center">
-  	<div class="content contactHolder colorWhite wow bounceInUp fullWidthMd width40">
-  	 <h1 class="fontSize45">TITULO</h1>
-  	 <br>
-  	 <p>lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
-  	 <br>
-  	 <br>
-  	 <h2 class="textCenter">BOOK</h2>
-  	 <br>
+  <div class="alignCenter container fullHeight fullWidth" layout="column" layout-align="end center">
+  	<div class="content infoHolder colorWhite wow bounceInUp width60 width90Md" layout="row" layout-align="center center">
+  	 
+     <div class="width80 height100 contentHolder backColorBlack padding20">
+      <h1 class="">TITULO</h1>
+  	  <p>lorme lorme lorme lorme lorme lmroem loreml lorme lormrme ormrme lme lmroemlormrme orlorme lmrel orme lorme lmrle lormemrllorme lmroem loreml lorme lmrel orme lorme lmrle lormee lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
+     </div>
+     <div class="width20 height100 backColorBlack padding20" layout="column" layout-align="center center">
+       <h2 class="textCenter">BOOK</h2>
+     </div>
+
     </div> 
   </div>
 </md-content>

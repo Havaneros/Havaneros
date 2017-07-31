@@ -9,6 +9,9 @@
 
   
 /*///////////////////////contenido*/
+.width20Md{
+  width: 20%;
+}
 .width30Md{
   width: 30%;
 }
@@ -75,22 +78,10 @@
 
 /*///////////////////////////////////////////////////////////header*/
 
-#header .container{
-  position: static;
-  margin-top: 0px;
-  width: 100%!important;
+#header {
+  position: absolute;
+  /*background-color: #282828;*/
 }
-#header .container .content div{
-  padding: 0 20px;
-}
-.headerHide{
-  top: 0px!important;
-}
-.headerAdjust{
-  margin-top: 0px!important;
-  max-width: 10000px!important;
-  width: 100%!important;
-} 
 
 /*//////////////////////////////////////////////////////footer*/
 #footer{

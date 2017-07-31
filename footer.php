@@ -58,7 +58,7 @@
        <br>
     </div>
   </div>
-  <div class="borderBottom backColorWhite fullWidth">
+  <div class="borderBottom backColorPrimary fullWidth">
   </div>
 </md-content>
 <md-content id="footer" class="backColorBlack" layout="column" layout-align="center center">

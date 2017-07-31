@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 
 /*///////////////////////////colores*/
 .colorPrimary{
-  color: #96ceb4;/*turquesa claro*/
+  color: #caab85;/*turquesa claro*/
 }
 .colorSecondary{
   color: #ff6f69;/*salmon oscuro*/
@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 }
 
 .backColorPrimary{
-  background-color: #96ceb4;/*turquesa claro*/
+  background-color: #caab85;/*turquesa claro*/
 }
 .backColorSecondary{
   background-color: #ff6f69;/*salmon oscuro*/
@@ -191,7 +191,7 @@ h2{
   width: auto;
 }
 .svgColorPrimary path{
-  fill: #96ceb4!important;/*turquesa opaco*/
+  fill: #caab85!important;/*turquesa opaco*/
 }
 .svgColorSecondary path{
   fill: #ff6f69!important;/*salmon oscuro*/
@@ -209,6 +209,9 @@ h2{
 
 
 /*///////////////////////contenido*/
+.width20{
+  width: 20%;
+}
 .width30{
   width: 30%;
 }
@@ -354,54 +357,36 @@ md-content .content, .container .content{
 
 /*///////////////////////////////////////////////////////////header*/
 #header{
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  right: 0;
+  position: fixed;
+}
+#header .logoHolder img{
+  height: 50px;
+  width: auto;
+}
+#header p, #header h1{
+  /*color:#caab85; */
+}
+.headerAdjust p, .headerAdjust h1{
+  /*color:#282828!important;*/
+}
+.headerAdjust{
   -webkit-transition: all 0.9s;
   -moz-transition: all 0.9s;
   -o-transition: all 0.9s;
   -ms-transition: all 0.9s;
   transition: all 0.9s;
-  height: 70px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  right: 0;
-}
-#header .contactInfo{
-  padding: 12px 50px;
-}
-#header .contactInfo p{
-  padding-right: 10px;
-}
-#header .container{
-  position: fixed;
-  -webkit-transition: all .8s;
-  -moz-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
-  transition: all .8s;
-  margin-top: 40px;
-  max-width: 1500px;
-  width: 90%;
-}
-#header .container .content{
-  height: 88px;
-  width: 90vw;
-}
-#header .container .content div{
-  padding: 0 30px;
-}
-.headerHide{
-  top: -70px!important;
-}
-.headerAdjust{
-  margin-top: 70px!important;
-  max-width: 10000px!important;
-  width: 100%!important;
+  top: 0px!important;
+  /*box-shadow: 0px 1px 20px 0px #282828;*/
 }
 #smallMenu{
   max-height: 0px;
   position: absolute;
-  top: 70px;
+  top: 58px;
   z-index: 9999;
   -webkit-transition: all .8s;
   -moz-transition: all .8s;
@@ -443,7 +428,7 @@ md-content .content, .container .content{
 }
 .line {
   position: absolute;
-  background: #ff6f69;
+  background: #caab85;
 }
 .line.-right, .line.-left {
   width: 4px;
@@ -621,9 +606,14 @@ md-content .content, .container .content{
 
 
 /*/////////////////////////////////////////////index main*/
-#indexMain .contactHolder{
-  padding: 50px;
-  background-color: rgba(0,0,0,0.5);
+#indexMain .infoHolder{
+  margin-bottom: 50px;
+}
+#indexMain .infoHolder div{
+  margin-right: 5px;
+}
+#indexMain .infoHolder .contentHolder{
+  overflow: hidden;
 }
 
 
@@ -657,7 +647,7 @@ md-content .content, .container .content{
  background-color: #282828!important;
 }
 .blog .paginationHolder .navigation .nav-links .current{
- background-color: #96ceb4!important;
+ background-color: #caab85!important;
  -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -670,7 +660,7 @@ md-content .content, .container .content{
  -o-transition: all 0.5s;
  -ms-transition: all 0.5s;
  transition: all 0.5s;
- background-color: #96ceb4!important;
+ background-color: #caab85!important;
 }
   
   
@@ -679,7 +669,7 @@ md-content .content, .container .content{
   padding-bottom: 50px;
 }
 #singlePost .content .info h2{
-  color:#96ceb4;
+  color:#caab85;
   padding-bottom: 10px;
 }
 #singlePost .posts{
@@ -708,13 +698,13 @@ md-content .content, .container .content{
 }
 #singlePost .info #comments textarea{
   height: 100px;
-  border:solid #96ceb4 3px ;
+  border:solid #caab85 3px ;
 }
 #singlePost .info #comments .comment-form-comment label{
   display: none;
 }
 #singlePost .info #comments input{
-  background-color: #96ceb4;
+  background-color: #caab85;
 }
 #singlePost .info #comments .comment-list{
   list-style-type: none;
