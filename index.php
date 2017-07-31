@@ -38,7 +38,7 @@ get_header();
   	  <p class="textJustify">lorme lorme lorme lorme lorme lmroem loreml lorme e lmrel orme lorme lmrle lormemrllorme lmroem loreml lorme lmrel orme lorme lmrle lormee lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
       <br>
      </div>
-     <div class="width30 height50 backColorBlack padding20" layout="column" layout-align="center center">
+     <div class="width30 fullWidthMd height50 backColorBlack padding20" layout="column" layout-align="center center">
        <h2 class="textCenter">READ MORE</h2>
      </div>
 
