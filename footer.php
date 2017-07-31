@@ -11,7 +11,12 @@
 <md-content id="footer" class="backColorBlack" layout="column" layout-align="center center">
   <div class="footerTop content width90 height350 autoHeightMd colorWhite wow bounceInUp" layout="row" layout-align="center center" layout-wrap>
     <div class="column width33 fullHeight " >
-       <h1 class="colorPrimary"><strong>HAVANEROS</strong></h1>
+       <div class="logoHolder">
+         <a href="/index.php">
+           <!-- <h1 class="colorPrimary">HAVANEROS</h1> -->
+           <img src="/wp-content/themes/Havaneros/assets/images/logoTest1.png">
+         </a>
+       </div>
        <br>
        <p class="textJustify">alorem ipsum dolor Cannabis Entertainment sit amet, consectetuer adipiscing elit.</p>
        <p>100 Havaneros Ave, Havaneros, CA 09088</p>

@@ -31,17 +31,28 @@ get_header();
     <div class="banner backgroundCover" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba3.jpg);"></div>
   </div>
   <div class="alignCenter container fullHeight fullWidth" layout="column" layout-align="end center">
-  	<div class="content infoHolder colorWhite wow bounceInUp width60 width90Md" layout="row" layout-align="center center">
+  	<div class="content infoHolder colorWhite wow bounceInUp width60 width90Md" layout="row" layout-align="center center" layout-wrap>
   	 
-     <div class="width80 height100 contentHolder backColorBlack padding20">
+     <div class="width70 fullWidthMd height150 contentHolder backColorBlack padding20">
       <h1 class="">TITULO</h1>
-  	  <p>lorme lorme lorme lorme lorme lmroem loreml lorme lormrme ormrme lme lmroemlormrme orlorme lmrel orme lorme lmrle lormemrllorme lmroem loreml lorme lmrel orme lorme lmrle lormee lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
+  	  <p>lorme lorme lorme lorme lorme lmroem loreml lorme e lmrel orme lorme lmrle lormemrllorme lmroem loreml lorme lmrel orme lorme lmrle lormee lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
      </div>
-     <div class="width20 height100 backColorBlack padding20" layout="column" layout-align="center center">
-       <h2 class="textCenter">BOOK</h2>
+     <div class="width20 fullWidthMd height150 height50Md backColorBlack padding20" layout="column" layout-align="center center">
+       <h2 class="textCenter">READ MORE</h2>
      </div>
 
     </div> 
+  </div>
+</md-content>
+
+<md-content id="indexTeam" class="backColorPrimary" layout="column" layout-align="center center">
+  <div class="content width90 padding20">
+    <h1 class="colorBlack">OUR TEAM</h1>
+    <div class="backColorBlack fullWidth divider"></div>
+    <br>
+  </div>
+  <div class="content padding50" layout="row" layout-align="center center" layout-wrap>
+    
   </div>
 </md-content>
 
@@ -100,8 +111,9 @@ get_header();
 </md-content> -->
 
 <md-content id="indexInsta" class="backColorPrimary" layout="column" layout-align="center center">
-  <div class="content padding10">
-    <h2 class="colorBlack textCenter">GALLERY</h2>
+  <div class="content width90 padding20">
+    <h1 class="colorBlack">GALLERY</h1>
+    <div class="backColorBlack fullWidth divider"></div>
     <br>
   </div>
   <div class="content padding50" layout="row" layout-align="center center" layout-wrap>

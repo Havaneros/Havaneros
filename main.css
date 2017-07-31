@@ -353,6 +353,10 @@ md-content .content, .container .content{
 }
 
 
+.divider{
+  height: 4px;
+}
+
 
 
 /*///////////////////////////////////////////////////////////header*/
@@ -503,8 +507,8 @@ md-content .content, .container .content{
 
 
 /*//////////////////////////////////////////////////////footer*/
-#footer{
-  
+#footer .logoHolder img{
+  height: 60px;
 }
 #footer .footerTop .column{
   padding: 30px 0 0 10%;
@@ -610,7 +614,8 @@ md-content .content, .container .content{
   margin-bottom: 50px;
 }
 #indexMain .infoHolder div{
-  margin-right: 5px;
+  margin-right: 1%;
+  margin-top: 5px;
 }
 #indexMain .infoHolder .contentHolder{
   overflow: hidden;

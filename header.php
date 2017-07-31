@@ -50,7 +50,7 @@
 
 <div id="header" class="container backColorWhite" layout="column" layout-align="center center">
     <div class="content relative width90" layout="row" layout-align="center center"> 
-      <div class="logoHolder alignLeft">
+      <div class="wow bounceInLeft logoHolder alignLeft">
          <a href="/index.php">
            <!-- <h1 class="colorPrimary">HAVANEROS</h1> -->
            <img src="/wp-content/themes/Havaneros/assets/images/logoTest2.png">
