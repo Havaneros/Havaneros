@@ -42,7 +42,7 @@ include('/titleRow.php');
 
 		?>
 
-		<div class="width30 hideMd padding50 posts">
+		<div class="width30 hideMd padding50 blog posts">
 		  <h2 class="textCenter">FEATURED POSTS</h2>
 		  <?php
         
@@ -64,10 +64,11 @@ include('/titleRow.php');
                         $featured_image = get_the_post_thumbnail_url($post->ID, 'full');
                       }
                  ?>
-                   <div class="wow bounceInRight post width100 padding10"  id="post-<?php get_the_ID(); ?>" >
-                      <a href="<?php the_permalink(); ?>">
-                       <div class="postInfo height150 backgroundCover backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
-                                     
+                   <div class="wow bounceInRight post fullWidth padding10"  id="post-<?php get_the_ID(); ?>" >
+                     <a href="<?php the_permalink(); ?>">
+                       <div class="postInfo height200">
+                          <div class="fullWidth fullHeight backgroundCover backColorBase" style="background-image: url('<?php echo $featured_image; ?>');">
+                          </div>
                        </div>
                        <h2 class="title colorBlack"><?php the_title(); ?></h2>
                      </a>

@@ -5,6 +5,7 @@
     <h1 class="textCenter colorWhite"><strong>Get news and information on upcoming events</strong></h1>
 
      <?php echo do_shortcode("[newsletter_form form='1']"); ?>
+      
   </div>
 </md-content>
 

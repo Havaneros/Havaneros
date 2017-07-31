@@ -93,6 +93,7 @@
            <span class="line -left"></span>
            <span class="line -bottom"></span>
          </a>
+         <div id="weglot_here"></div>
       </div>
       <div id="burger" class="alignRight showMd btn">
        <img src="/wp-content/themes/Havaneros/assets/images/svgs/lnr-menu-circle.svg"  class="svgColorSecondary svg40 svg">
