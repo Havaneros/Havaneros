@@ -97,9 +97,9 @@ $(window).scroll(function() {
 
     var limit = $('#indexMain').outerHeight()/1.2;
     if(scroll <= limit){
-       var parallax = scroll;
+       var parallax = scroll*2;
        parallax += 'px';
-       $(".sliderSlick").css('top',parallax);
+       $(".parallax").css('top',parallax);
     }
     
 });

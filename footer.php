@@ -2,10 +2,10 @@
   <!--FOOTER-->
 <md-content id="newsletter" class="backgroundCover backColorBase autoHeight" layout="column" layout-align="center center">
   <div class="content padding20" layout="column" layout-align="center center">
-    <h1 class="textCenter colorWhite"><strong>Get news and information on upcoming events</strong></h1>
+    <h2 class="textCenter colorWhite">Get news and information on upcoming events</h2>
 
      <?php echo do_shortcode("[newsletter_form form='1']"); ?>
-      
+
   </div>
 </md-content>
 

@@ -102,13 +102,14 @@
 </div>
 <md-content id="smallMenu" class=" fullWidth backColorWhite colorWhite showMd" layout="column" layout-align="center center">
        <div class="content width90 ">
-        <div class="textLeft optionsHolder">
+        <div class="textLeft optionsHolder padding20">
              <a href="#"><p class="fontSize25">menu 1</p></a>
              <a href="#"><p class="fontSize25">menu 2</p></a>
              <a href="#"><p class="fontSize25">menu 3</p></a>
              <a href="#"><p class="fontSize25">menu 4</p></a>
              <a href="#"><p class="fontSize25">menu 5</p></a>
              <a href="#"><p class="fontSize25">menu 6</p></a>
+             <div id="weglot_here"></div>
           </div>
        </div>
 </md-content>

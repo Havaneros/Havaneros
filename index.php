@@ -26,23 +26,57 @@ get_header();
 
 <md-content id="indexMain" class="backColorBase fullHeight minHeight500 relative">
   <div class="sliderSlick fullHeight fullWidth">
-    <div class="banner backgroundCover" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba4.jpg);"></div>
-    <div class="banner backgroundCover" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba1.jpg);"></div>
-    <div class="banner backgroundCover" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba3.jpg);"></div>
-  </div>
-  <div class="alignCenter container fullHeight fullWidth" layout="column" layout-align="end center">
-  	<div class="content infoHolder colorWhite wow bounceInUp width90" layout="column" layout-align="center start">
-     <div class="width60 fullWidthMd  contentHolder">
-      <h1 class="">Paquete de prueba</h1>
-      <br>
-  	  <p class="textJustify">lorme lorme lorme lorme lorme lmroem loreml lorme e lmrel orme lorme lmrle lormemrllorme lmroem loreml lorme lmrel orme lorme lmrle lormee lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
-      <br>
-     </div>
-     <div class="width30 fullWidthMd height50 backColorBlack padding20" layout="column" layout-align="center center">
-       <h2 class="textCenter">READ MORE</h2>
-     </div>
 
-    </div> 
+    <div class="banner  container  relative" layout="column" layout-align="end center">
+      <div class="backgroundCover fullHeight fullWidth alignCenter parallax" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba5.jpg);"></div>
+    	<!-- <div class="backShadow alignCenter fullWidth fullHeight"></div> -->
+      <div class="content infoHolder colorWhite wow bounceInUp width90 alignCenter" layout="column" layout-align="end start">
+       <div class="width60 fullWidthMd  contentHolder">
+        <h1 class="">Paquete de prueba</h1>
+        <br>
+    	  <p class="textJustify">lorme lorme lorme lorme lorme lmroem loreml lorme e lmrel orme lorme lmrle lormemrllorme lmroem loreml lorme lmrel orme lorme lmrle lormee lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
+        <br>
+       </div>
+       <div class="width30 fullWidthMd height50 backColorBlack padding20" layout="column" layout-align="center center">
+         <h2 class="textCenter">READ MORE</h2>
+       </div>
+  
+      </div> 
+    </div>
+
+    <div class="banner  container  relative" layout="column" layout-align="end center">
+      <div class="backgroundCover fullHeight fullWidth alignCenter parallax" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba6.jpg);"></div>
+      <!-- <div class="backShadow alignCenter fullWidth fullHeight"></div> -->
+      <div class="content infoHolder colorWhite wow bounceInUp width90 alignCenter" layout="column" layout-align="end start">
+       <div class="width60 fullWidthMd  contentHolder">
+        <h1 class="">Paquete de prueba</h1>
+        <br>
+        <p class="textJustify">lorme lorme lorme lorme lorme lmroem loreml lorme e lmrel orme lorme lmrle lormemrllorme lmroem loreml lorme lmrel orme lorme lmrle lormee lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
+        <br>
+       </div>
+       <div class="width30 fullWidthMd height50 backColorBlack padding20" layout="column" layout-align="center center">
+         <h2 class="textCenter">READ MORE</h2>
+       </div>
+  
+      </div> 
+    </div>
+
+    <div class="banner  container  relative" layout="column" layout-align="end center">
+      <div class="backgroundCover fullHeight fullWidth alignCenter parallax" style="background-image:url(/wp-content/themes/havaneros/assets/images/banners/cuba4.jpg);"></div>
+      <!-- <div class="backShadow alignCenter fullWidth fullHeight"></div> -->
+      <div class="content infoHolder colorWhite wow bounceInUp width90 alignCenter" layout="column" layout-align="end start">
+       <div class="width60 fullWidthMd  contentHolder">
+        <h1 class="">Paquete de prueba</h1>
+        <br>
+        <p class="textJustify">lorme lorme lorme lorme lorme lmroem loreml lorme e lmrel orme lorme lmrle lormemrllorme lmroem loreml lorme lmrel orme lorme lmrle lormee lorme lorme lorme lorme lorme lorme lorme lmroem loreml lorme lmrel orme lorme lmrle lorme lorme</p>
+        <br>
+       </div>
+       <div class="width30 fullWidthMd height50 backColorBlack padding20" layout="column" layout-align="center center">
+         <h2 class="textCenter">READ MORE</h2>
+       </div>
+  
+      </div> 
+    </div>
   </div>
 </md-content>
 
@@ -59,6 +93,12 @@ get_header();
 </md-content>
 
 <md-content id="indexInfo" class="backColorWhite hideSm" layout="column" layout-align="center center">
+  <div class="content width90 padding20">
+    <br>
+    <h2 class="colorBlack">PACKAGES</h2>
+    <div class="backColorBlack fullWidth divider"></div>
+    <br>
+  </div>
   <div class="content padding50" layout="row" layout-align="center center" layout-wrap>
      <div class="infoBox width33 height200 width50Md padding50" layout="column" layout-align="center center">
        <div>
